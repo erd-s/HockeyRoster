@@ -12,4 +12,11 @@ class RosterTableViewCell: UITableViewCell {
 	@IBOutlet weak var playerImageView: UIImageView!
 	@IBOutlet weak var playerNameLabel: UILabel!
 	@IBOutlet weak var playerPositionLabel: UILabel!
+	
+	override func awakeFromNib() {
+		super.awakeFromNib()
+		
+		//lighten selected background view
+		selectedBackgroundView = UIImageView(image: UIColor.gray05.image)
+	}
 }

@@ -25,4 +25,5 @@ extension UIColor {
 	}
 	
 	static var gray05: UIColor { return UIColor(white: 0, alpha: 0.05) }
+	static var gray45: UIColor { return UIColor(white: 0, alpha: 0.45) }
 }

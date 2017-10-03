@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 extension UIViewController {
-	
 	/**
 	Alert to show when an error occurs.
 	

@@ -81,7 +81,6 @@ class RosterViewController: UIViewController {
 	}
 }
 
-
 //--------------------------------------
 // MARK: - Table View
 //--------------------------------------
