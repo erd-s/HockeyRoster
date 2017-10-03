@@ -13,4 +13,4 @@ Code sample for loading a roster of hockey players with list and detail view.<br
 
 ### Notes:
 + Image URLS of hockey players in `generated.json` are from <a href="https://www.123rf.com/stock-photo/hockey_player.html">123rf.com</a> and not intended for any other use than a demon of paginated image loading.
-+ Hockey player "positions" in `generated.json` were randomly generated with <a href="https://www.json-generator.com">Json Generator</a>.
++ Hockey player data, including "positions", in `generated.json` were randomly generated with <a href="https://www.json-generator.com">Json Generator</a>.
