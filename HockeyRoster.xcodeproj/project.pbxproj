@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C7F40D81F82F27000DBBD5A /* generated.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = generated.json; path = ../../../Desktop/generated.json; sourceTree = "<group>"; };
+		0C7F40D81F82F27000DBBD5A /* generated.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = generated.json; sourceTree = "<group>"; };
 		0C7F40DA1F83162F00DBBD5A /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		0CB40DB21F829E1C006E8E2F /* HockeyRoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HockeyRoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB40DB51F829E1C006E8E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
