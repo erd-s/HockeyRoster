@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gBZ-Mm-9ZV">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hockey Roster-->
+        <scene sceneID="gz2-x5-2f0">
+            <objects>
+                <viewController id="9Wo-Gj-B7k" customClass="RosterViewController" customModule="HockeyRoster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E5x-l7-LR0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="St6-my-wqJ" customClass="RosterTableView" customModule="HockeyRoster" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rosterCellIdentifier" rowHeight="89" id="u5L-dG-Il8" customClass="RosterTableViewCell" customModule="HockeyRoster" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="89"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u5L-dG-Il8" id="VCh-Pj-mou">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="88.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Ol-3q-lOR">
+                                                    <rect key="frame" x="20" y="9" width="70" height="70.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="MTj-ki-T7t"/>
+                                                        <constraint firstAttribute="width" secondItem="4Ol-3q-lOR" secondAttribute="height" multiplier="1:1" id="QwU-9O-EMb"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mX-r4-cfD">
+                                                    <rect key="frame" x="98" y="3" width="186" height="41"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvQ-Tf-TXe">
+                                                    <rect key="frame" x="98" y="47" width="178" height="30.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ZvQ-Tf-TXe" secondAttribute="trailing" constant="3" id="7uh-KP-wHC"/>
+                                                <constraint firstItem="6mX-r4-cfD" firstAttribute="top" secondItem="VCh-Pj-mou" secondAttribute="top" constant="3" id="8i6-ha-xY1"/>
+                                                <constraint firstItem="ZvQ-Tf-TXe" firstAttribute="top" secondItem="6mX-r4-cfD" secondAttribute="bottom" constant="3" id="BWN-xw-TRX"/>
+                                                <constraint firstItem="4Ol-3q-lOR" firstAttribute="centerY" secondItem="VCh-Pj-mou" secondAttribute="centerY" id="Ct2-xx-zoC"/>
+                                                <constraint firstItem="4Ol-3q-lOR" firstAttribute="leading" secondItem="VCh-Pj-mou" secondAttribute="leading" constant="20" id="G7C-N2-ZW1"/>
+                                                <constraint firstItem="ZvQ-Tf-TXe" firstAttribute="height" secondItem="6mX-r4-cfD" secondAttribute="height" multiplier="0.75" id="cex-fw-hNi"/>
+                                                <constraint firstAttribute="trailing" secondItem="6mX-r4-cfD" secondAttribute="trailing" constant="3" id="fIH-P0-1cz"/>
+                                                <constraint firstItem="ZvQ-Tf-TXe" firstAttribute="leading" secondItem="4Ol-3q-lOR" secondAttribute="trailing" constant="8" id="gUP-AE-OlD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ZvQ-Tf-TXe" secondAttribute="bottom" constant="3" id="lKx-qq-20k"/>
+                                                <constraint firstItem="6mX-r4-cfD" firstAttribute="leading" secondItem="4Ol-3q-lOR" secondAttribute="trailing" constant="8" id="zs4-Tz-RVE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="playerImageView" destination="4Ol-3q-lOR" id="zvx-o6-6oy"/>
+                                            <outlet property="playerNameLabel" destination="6mX-r4-cfD" id="C0h-oe-wkr"/>
+                                            <outlet property="playerPositionLabel" destination="ZvQ-Tf-TXe" id="cLS-XZ-gow"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9Wo-Gj-B7k" id="BOM-YQ-1ln"/>
+                                    <outlet property="delegate" destination="9Wo-Gj-B7k" id="ljz-cb-dck"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roster not available." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNb-SH-nFG">
+                                <rect key="frame" x="20" y="229" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F8v-fd-326" firstAttribute="bottom" secondItem="St6-my-wqJ" secondAttribute="bottom" id="2yX-44-f9n"/>
+                            <constraint firstItem="DNb-SH-nFG" firstAttribute="centerY" secondItem="E5x-l7-LR0" secondAttribute="centerY" id="6mc-89-LJr"/>
+                            <constraint firstItem="F8v-fd-326" firstAttribute="trailing" secondItem="DNb-SH-nFG" secondAttribute="trailing" constant="20" id="Uot-w7-rVZ"/>
+                            <constraint firstItem="St6-my-wqJ" firstAttribute="leading" secondItem="F8v-fd-326" secondAttribute="leading" id="ZhD-sw-Hzd"/>
+                            <constraint firstItem="DNb-SH-nFG" firstAttribute="leading" secondItem="F8v-fd-326" secondAttribute="leading" constant="20" id="dha-bC-JlV"/>
+                            <constraint firstItem="St6-my-wqJ" firstAttribute="top" secondItem="F8v-fd-326" secondAttribute="top" id="f6D-yH-oPh"/>
+                            <constraint firstItem="DNb-SH-nFG" firstAttribute="centerX" secondItem="E5x-l7-LR0" secondAttribute="centerX" id="msb-Wg-FRE"/>
+                            <constraint firstItem="F8v-fd-326" firstAttribute="trailing" secondItem="St6-my-wqJ" secondAttribute="trailing" id="q4f-Ti-xgO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F8v-fd-326"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hockey Roster" id="sat-MU-eI3">
+                        <barButtonItem key="backBarButtonItem" title="Roster" id="4v9-L7-CMH"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="rosterNotAvailableLabel" destination="DNb-SH-nFG" id="cag-eS-VFH"/>
+                        <outlet property="rosterTableView" destination="St6-my-wqJ" id="RK9-MQ-ymO"/>
+                        <segue destination="Ut1-7t-3Cs" kind="show" identifier="playerDetailSegue" id="FTb-30-0rQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeL-UQ-YXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="-220.83958020989508"/>
+        </scene>
+        <!--PlayerDetail-->
+        <scene sceneID="epL-S4-2pI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerDetail" id="Ut1-7t-3Cs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hhd-vT-cV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650" y="-221"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rlq-Z2-CLt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gBZ-Mm-9ZV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jvU-hx-znz">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9Wo-Gj-B7k" kind="relationship" relationship="rootViewController" id="EuL-JF-WCH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="635-Cd-2FL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345.60000000000002" y="-219.49025487256372"/>
+        </scene>
+    </scenes>
+</document>

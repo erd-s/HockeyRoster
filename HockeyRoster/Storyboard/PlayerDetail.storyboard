@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ewc-xw-jQO">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player Detail View Controller-->
+        <scene sceneID="hRr-If-A5b">
+            <objects>
+                <viewController id="ewc-xw-jQO" customClass="PlayerDetailViewController" customModule="HockeyRoster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f5s-Vf-maU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U0t-Ni-jLc">
+                                <rect key="frame" x="20" y="94" width="280" height="192"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2F-jj-jql">
+                                <rect key="frame" x="20" y="347" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OF5-n8-fhX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edf-iF-bD9">
+                                <rect key="frame" x="20" y="306" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NFR-HS-FNE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L5E-Jh-fWV" firstAttribute="trailing" secondItem="Q2F-jj-jql" secondAttribute="trailing" constant="20" id="4n8-Nf-Nct"/>
+                            <constraint firstItem="U0t-Ni-jLc" firstAttribute="height" secondItem="f5s-Vf-maU" secondAttribute="height" multiplier="0.4" id="5Q0-7v-Uzj"/>
+                            <constraint firstItem="Q2F-jj-jql" firstAttribute="top" secondItem="Edf-iF-bD9" secondAttribute="bottom" constant="20" id="A2X-dE-f8S"/>
+                            <constraint firstItem="Edf-iF-bD9" firstAttribute="leading" secondItem="L5E-Jh-fWV" secondAttribute="leading" constant="20" id="Dur-VE-M5S"/>
+                            <constraint firstItem="L5E-Jh-fWV" firstAttribute="trailing" secondItem="Edf-iF-bD9" secondAttribute="trailing" constant="20" id="Gwt-wU-tDO"/>
+                            <constraint firstItem="U0t-Ni-jLc" firstAttribute="leading" secondItem="L5E-Jh-fWV" secondAttribute="leading" constant="20" id="RXK-5x-DRi"/>
+                            <constraint firstItem="Q2F-jj-jql" firstAttribute="leading" secondItem="L5E-Jh-fWV" secondAttribute="leading" constant="20" id="ZuX-v1-P6Q"/>
+                            <constraint firstItem="Edf-iF-bD9" firstAttribute="top" secondItem="U0t-Ni-jLc" secondAttribute="bottom" constant="20" id="cFj-1o-X5p"/>
+                            <constraint firstItem="L5E-Jh-fWV" firstAttribute="trailing" secondItem="U0t-Ni-jLc" secondAttribute="trailing" constant="20" id="eZq-rY-WVe"/>
+                            <constraint firstItem="U0t-Ni-jLc" firstAttribute="centerY" secondItem="f5s-Vf-maU" secondAttribute="centerY" constant="-50" id="ug2-bN-0Ee"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L5E-Jh-fWV"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerImageView" destination="U0t-Ni-jLc" id="5px-k8-Yrw"/>
+                        <outlet property="playerNameLabel" destination="Edf-iF-bD9" id="f4g-4Y-3Zx"/>
+                        <outlet property="playerPositionLabel" destination="Q2F-jj-jql" id="5Wm-JJ-yPf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdt-MU-OO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="-52"/>
+        </scene>
+    </scenes>
+</document>

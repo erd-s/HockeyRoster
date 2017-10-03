@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C7F40D91F82F27000DBBD5A /* generated.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C7F40D81F82F27000DBBD5A /* generated.json */; };
+		0C7F40DB1F83162F00DBBD5A /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7F40DA1F83162F00DBBD5A /* UIColor + Extension.swift */; };
+		0CB40DB61F829E1C006E8E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB40DB51F829E1C006E8E2F /* AppDelegate.swift */; };
+		0CB40DBD1F829E1C006E8E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB40DBC1F829E1C006E8E2F /* Assets.xcassets */; };
+		0CB40DC01F829E1C006E8E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB40DBE1F829E1C006E8E2F /* LaunchScreen.storyboard */; };
+		0CB40DCE1F829E9D006E8E2F /* Roster.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB40DCD1F829E9D006E8E2F /* Roster.storyboard */; };
+		0CB40DD01F829EAC006E8E2F /* PlayerDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB40DCF1F829EAC006E8E2F /* PlayerDetail.storyboard */; };
+		0CB40DD21F829EBE006E8E2F /* RosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB40DD11F829EBE006E8E2F /* RosterViewController.swift */; };
+		0CB40DD41F829ECF006E8E2F /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB40DD31F829ECF006E8E2F /* PlayerDetailViewController.swift */; };
+		0CB40DD61F829F24006E8E2F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB40DD51F829F24006E8E2F /* Player.swift */; };
+		0CB40DD91F829F50006E8E2F /* RosterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB40DD81F829F50006E8E2F /* RosterLoader.swift */; };
+		0CB40DDB1F82A011006E8E2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB40DDA1F82A011006E8E2F /* Constants.swift */; };
+		0CB40DDD1F82A0EE006E8E2F /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB40DDC1F82A0EE006E8E2F /* RosterTableViewCell.swift */; };
+		0CB40DDF1F82A18D006E8E2F /* PlayerImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB40DDE1F82A18D006E8E2F /* PlayerImageLoader.swift */; };
+		0CB40DE41F82A742006E8E2F /* RosterTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB40DE31F82A742006E8E2F /* RosterTableView.swift */; };
+		0CB40DE71F82B558006E8E2F /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB40DE61F82B558006E8E2F /* UIViewController + Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C7F40D81F82F27000DBBD5A /* generated.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = generated.json; path = ../../../Desktop/generated.json; sourceTree = "<group>"; };
+		0C7F40DA1F83162F00DBBD5A /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		0CB40DB21F829E1C006E8E2F /* HockeyRoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HockeyRoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CB40DB51F829E1C006E8E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CB40DBC1F829E1C006E8E2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CB40DBF1F829E1C006E8E2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CB40DC11F829E1C006E8E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/erdos/Projects/HockeyRoster/HockeyRoster/Info.plist; sourceTree = "<absolute>"; };
+		0CB40DCD1F829E9D006E8E2F /* Roster.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Roster.storyboard; sourceTree = "<group>"; };
+		0CB40DCF1F829EAC006E8E2F /* PlayerDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayerDetail.storyboard; sourceTree = "<group>"; };
+		0CB40DD11F829EBE006E8E2F /* RosterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterViewController.swift; sourceTree = "<group>"; };
+		0CB40DD31F829ECF006E8E2F /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
+		0CB40DD51F829F24006E8E2F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		0CB40DD81F829F50006E8E2F /* RosterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterLoader.swift; sourceTree = "<group>"; };
+		0CB40DDA1F82A011006E8E2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0CB40DDC1F82A0EE006E8E2F /* RosterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterTableViewCell.swift; sourceTree = "<group>"; };
+		0CB40DDE1F82A18D006E8E2F /* PlayerImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerImageLoader.swift; sourceTree = "<group>"; };
+		0CB40DE31F82A742006E8E2F /* RosterTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterTableView.swift; sourceTree = "<group>"; };
+		0CB40DE61F82B558006E8E2F /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CB40DAF1F829E1C006E8E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CB40DA91F829E1C006E8E2F = {
+			isa = PBXGroup;
+			children = (
+				0CB40DB41F829E1C006E8E2F /* HockeyRoster */,
+				0CB40DB31F829E1C006E8E2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CB40DB31F829E1C006E8E2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CB40DB21F829E1C006E8E2F /* HockeyRoster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CB40DB41F829E1C006E8E2F /* HockeyRoster */ = {
+			isa = PBXGroup;
+			children = (
+				0C7F40D81F82F27000DBBD5A /* generated.json */,
+				0CB40DC11F829E1C006E8E2F /* Info.plist */,
+				0CB40DB51F829E1C006E8E2F /* AppDelegate.swift */,
+				0CB40DDA1F82A011006E8E2F /* Constants.swift */,
+				0CB40DBC1F829E1C006E8E2F /* Assets.xcassets */,
+				0CB40DD71F829F2E006E8E2F /* Controller */,
+				0CB40DE51F82B542006E8E2F /* Extension */,
+				0CB40DBE1F829E1C006E8E2F /* LaunchScreen.storyboard */,
+				0CB40DCA1F829E56006E8E2F /* Model */,
+				0CB40DC71F829E33006E8E2F /* Storyboard */,
+				0CB40DCB1F829E5B006E8E2F /* View */,
+				0CB40DC91F829E48006E8E2F /* View Controller */,
+			);
+			path = HockeyRoster;
+			sourceTree = "<group>";
+		};
+		0CB40DC71F829E33006E8E2F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0CB40DCD1F829E9D006E8E2F /* Roster.storyboard */,
+				0CB40DCF1F829EAC006E8E2F /* PlayerDetail.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0CB40DC91F829E48006E8E2F /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CB40DD11F829EBE006E8E2F /* RosterViewController.swift */,
+				0CB40DD31F829ECF006E8E2F /* PlayerDetailViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		0CB40DCA1F829E56006E8E2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CB40DE31F82A742006E8E2F /* RosterTableView.swift */,
+				0CB40DD51F829F24006E8E2F /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0CB40DCB1F829E5B006E8E2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CB40DDC1F82A0EE006E8E2F /* RosterTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CB40DD71F829F2E006E8E2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CB40DD81F829F50006E8E2F /* RosterLoader.swift */,
+				0CB40DDE1F82A18D006E8E2F /* PlayerImageLoader.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0CB40DE51F82B542006E8E2F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0C7F40DA1F83162F00DBBD5A /* UIColor + Extension.swift */,
+				0CB40DE61F82B558006E8E2F /* UIViewController + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CB40DB11F829E1C006E8E2F /* HockeyRoster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CB40DC41F829E1C006E8E2F /* Build configuration list for PBXNativeTarget "HockeyRoster" */;
+			buildPhases = (
+				0CB40DAE1F829E1C006E8E2F /* Sources */,
+				0CB40DAF1F829E1C006E8E2F /* Frameworks */,
+				0CB40DB01F829E1C006E8E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HockeyRoster;
+			productName = HockeyRoster;
+			productReference = 0CB40DB21F829E1C006E8E2F /* HockeyRoster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CB40DAA1F829E1C006E8E2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Erdos;
+				TargetAttributes = {
+					0CB40DB11F829E1C006E8E2F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0CB40DAD1F829E1C006E8E2F /* Build configuration list for PBXProject "HockeyRoster" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CB40DA91F829E1C006E8E2F;
+			productRefGroup = 0CB40DB31F829E1C006E8E2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CB40DB11F829E1C006E8E2F /* HockeyRoster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CB40DB01F829E1C006E8E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB40DCE1F829E9D006E8E2F /* Roster.storyboard in Resources */,
+				0CB40DC01F829E1C006E8E2F /* LaunchScreen.storyboard in Resources */,
+				0C7F40D91F82F27000DBBD5A /* generated.json in Resources */,
+				0CB40DD01F829EAC006E8E2F /* PlayerDetail.storyboard in Resources */,
+				0CB40DBD1F829E1C006E8E2F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CB40DAE1F829E1C006E8E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB40DD61F829F24006E8E2F /* Player.swift in Sources */,
+				0CB40DDF1F82A18D006E8E2F /* PlayerImageLoader.swift in Sources */,
+				0CB40DD91F829F50006E8E2F /* RosterLoader.swift in Sources */,
+				0CB40DB61F829E1C006E8E2F /* AppDelegate.swift in Sources */,
+				0C7F40DB1F83162F00DBBD5A /* UIColor + Extension.swift in Sources */,
+				0CB40DD21F829EBE006E8E2F /* RosterViewController.swift in Sources */,
+				0CB40DD41F829ECF006E8E2F /* PlayerDetailViewController.swift in Sources */,
+				0CB40DE71F82B558006E8E2F /* UIViewController + Extension.swift in Sources */,
+				0CB40DDB1F82A011006E8E2F /* Constants.swift in Sources */,
+				0CB40DDD1F82A0EE006E8E2F /* RosterTableViewCell.swift in Sources */,
+				0CB40DE41F82A742006E8E2F /* RosterTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0CB40DBE1F829E1C006E8E2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CB40DBF1F829E1C006E8E2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CB40DC21F829E1C006E8E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CB40DC31F829E1C006E8E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CB40DC51F829E1C006E8E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XV4TQ596Q7;
+				INFOPLIST_FILE = HockeyRoster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Erdos.HockeyRoster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CB40DC61F829E1C006E8E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XV4TQ596Q7;
+				INFOPLIST_FILE = HockeyRoster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Erdos.HockeyRoster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CB40DAD1F829E1C006E8E2F /* Build configuration list for PBXProject "HockeyRoster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CB40DC21F829E1C006E8E2F /* Debug */,
+				0CB40DC31F829E1C006E8E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CB40DC41F829E1C006E8E2F /* Build configuration list for PBXNativeTarget "HockeyRoster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CB40DC51F829E1C006E8E2F /* Debug */,
+				0CB40DC61F829E1C006E8E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CB40DAA1F829E1C006E8E2F /* Project object */;
+}
