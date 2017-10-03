@@ -76,23 +76,41 @@
                                     <outlet property="delegate" destination="9Wo-Gj-B7k" id="ljz-cb-dck"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roster not available." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNb-SH-nFG">
-                                <rect key="frame" x="20" y="229" width="280" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roster not available." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNb-SH-nFG">
+                                <rect key="frame" x="20" y="229.5" width="280" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TNK-4E-R3E">
+                                <rect key="frame" x="20" y="216" width="280" height="48.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Roster..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZZ-bp-tf6">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="aCS-VE-MuT">
+                                        <rect key="frame" x="0.0" y="28.5" width="280" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="F8v-fd-326" firstAttribute="bottom" secondItem="St6-my-wqJ" secondAttribute="bottom" id="2yX-44-f9n"/>
                             <constraint firstItem="DNb-SH-nFG" firstAttribute="centerY" secondItem="E5x-l7-LR0" secondAttribute="centerY" id="6mc-89-LJr"/>
+                            <constraint firstItem="TNK-4E-R3E" firstAttribute="leading" secondItem="F8v-fd-326" secondAttribute="leading" constant="20" id="QWn-J6-BSc"/>
                             <constraint firstItem="F8v-fd-326" firstAttribute="trailing" secondItem="DNb-SH-nFG" secondAttribute="trailing" constant="20" id="Uot-w7-rVZ"/>
+                            <constraint firstItem="TNK-4E-R3E" firstAttribute="centerY" secondItem="E5x-l7-LR0" secondAttribute="centerY" id="WEl-cm-Ior"/>
                             <constraint firstItem="St6-my-wqJ" firstAttribute="leading" secondItem="F8v-fd-326" secondAttribute="leading" id="ZhD-sw-Hzd"/>
+                            <constraint firstItem="TNK-4E-R3E" firstAttribute="centerX" secondItem="E5x-l7-LR0" secondAttribute="centerX" id="bdP-oi-7gT"/>
                             <constraint firstItem="DNb-SH-nFG" firstAttribute="leading" secondItem="F8v-fd-326" secondAttribute="leading" constant="20" id="dha-bC-JlV"/>
                             <constraint firstItem="St6-my-wqJ" firstAttribute="top" secondItem="F8v-fd-326" secondAttribute="top" id="f6D-yH-oPh"/>
                             <constraint firstItem="DNb-SH-nFG" firstAttribute="centerX" secondItem="E5x-l7-LR0" secondAttribute="centerX" id="msb-Wg-FRE"/>
                             <constraint firstItem="F8v-fd-326" firstAttribute="trailing" secondItem="St6-my-wqJ" secondAttribute="trailing" id="q4f-Ti-xgO"/>
+                            <constraint firstItem="F8v-fd-326" firstAttribute="trailing" secondItem="TNK-4E-R3E" secondAttribute="trailing" constant="20" id="zGf-zm-cgf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="F8v-fd-326"/>
                     </view>
@@ -100,6 +118,7 @@
                         <barButtonItem key="backBarButtonItem" title="Roster" id="4v9-L7-CMH"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="loadingStackView" destination="TNK-4E-R3E" id="wfV-sa-cqT"/>
                         <outlet property="rosterNotAvailableLabel" destination="DNb-SH-nFG" id="cag-eS-VFH"/>
                         <outlet property="rosterTableView" destination="St6-my-wqJ" id="RK9-MQ-ymO"/>
                         <segue destination="Ut1-7t-3Cs" kind="show" identifier="playerDetailSegue" id="FTb-30-0rQ"/>

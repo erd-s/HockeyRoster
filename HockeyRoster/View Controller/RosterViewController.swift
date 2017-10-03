@@ -21,6 +21,7 @@ class RosterViewController: UIViewController {
 	//--------------------------------------
 	@IBOutlet weak var rosterTableView: RosterTableView!
 	@IBOutlet weak var rosterNotAvailableLabel: UILabel!
+	@IBOutlet weak var loadingStackView: UIStackView!
 	
 	//--------------------------------------
 	// MARK: - View
@@ -30,6 +31,7 @@ class RosterViewController: UIViewController {
 		
 		rosterLoader = RosterLoader()
 		rosterLoader?.loadFrom(url: Links.localJSONFilepath) {  [weak self] (players, error) in
+			
 			if let error = error {
 				let nsVersionError = error as NSError
 				let message = "Error code: \(nsVersionError.code). " + "\(error.localizedDescription)"
@@ -39,7 +41,7 @@ class RosterViewController: UIViewController {
 			}
 			
 			self?.players = players
-			self?.configureViewsForRoster()
+			self?.configureViewsForFinishedLoad()
 		}
 	}
 	
@@ -54,8 +56,10 @@ class RosterViewController: UIViewController {
 	}
 	
 	///reloads tableview or shows roster not available text.
-	func configureViewsForRoster() {
+	func configureViewsForFinishedLoad() {
 		DispatchQueue.main.async { [weak self] in
+			self?.loadingStackView.alpha = 0
+
 			if (self?.players?.count ?? 0) > 0 {
 				self?.rosterTableView.reloadData()
 				self?.rosterNotAvailableLabel.alpha = 0
