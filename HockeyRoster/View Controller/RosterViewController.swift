@@ -107,7 +107,9 @@ extension RosterViewController: UITableViewDelegate, UITableViewDataSource {
 			let player = roster?.players?[indexPath.row],
 			player.image == nil,
 			!player.isLoadingImage
-			else { return }
+			else {
+				return
+		}
 		
 		PlayerImageLoader.loadImageFor(player) { success in
 			if success {
