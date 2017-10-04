@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 class Player: Codable {
-	var image: UIImage?
-	var imageURL: URL?
 	var name: String?
 	var position: String?
+	var image: UIImage?
+	var imageURL: URL?
 	var isLoadingImage = false
 	
 	required init(from decoder: Decoder) throws {
