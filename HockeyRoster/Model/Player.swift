@@ -9,42 +9,51 @@
 import Foundation
 import UIKit
 
-class Player {
+class Player: Codable {
 	var image: UIImage?
 	var imageURL: URL?
 	var name: String?
 	var position: String?
 	var isLoadingImage = false
+	
+	///initialize w/o using coder/decoder
 	init(fromDict dict: [String: Any]?) {
 		guard let dict = dict else { return }
 		name = dict[Keys.name] as? String
-		
-		///position (coordinates) is based on available randomly generated data
-		if let yPos = dict[Keys.yPos] as? Double,
-			let xPos = dict[Keys.xPos] as? Double {
-			position = "(\(xPos), \(yPos))"
-		} else {
-			///position based on server hosted json
-			position = dict[Keys.position] as? String
-		}
+		position = dict[Keys.position] as? String
 		
 		if let imageURLString = dict[Keys.imageURL] as? String {
 			imageURL = URL(string: imageURLString)
 		}
 	}
+	
+	required init(from decoder: Decoder) throws {
+		let values = try decoder.container(keyedBy: CodingKeys.self)
+		
+		imageURL = try values.decode(URL.self, forKey: .imageURL)
+		name = try values.decode(String.self, forKey: .name)
+		position = try values.decode(String.self, forKey: .position)
+	}
+	
+	func encode(to encoder: Encoder) throws {
+		var container = encoder.container(keyedBy: CodingKeys.self)
+		try container.encode(imageURL, forKey: .imageURL)
+		try container.encode(position, forKey: .position)
+		try container.encode(name, forKey: .name)
+	}
 }
 
-//--------------------------------------
 // MARK: - JSON Keys
-//--------------------------------------
 extension Player {
+	private enum CodingKeys: String, CodingKey {
+		case imageURL = "picture"
+		case name
+		case position
+	}
+	
 	private struct Keys {
 		static let name = "name"
-		static let xPos = "latitude"
-		static let yPos = "longitude"
 		static let imageURL = "picture"
 		static let position = "position"
-		
-		//TODO: Correct/add keys based on actual hockey roster JSON when it becomes available.
 	}
 }

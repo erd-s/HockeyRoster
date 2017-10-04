@@ -9,31 +9,23 @@
 import UIKit
 
 class PlayerDetailViewController: UIViewController {
-	//--------------------------------------
-	// MARK: - Properties
-	//--------------------------------------
-	var player: Player?
+		// MARK: - Properties
+		var player: Player?
 
-	//--------------------------------------
-	// MARK: - Outlets
-	//--------------------------------------
-	@IBOutlet weak var playerImageView: UIImageView!
+		// MARK: - Outlets
+		@IBOutlet weak var playerImageView: UIImageView!
 	@IBOutlet weak var playerNameLabel: UILabel!
 	@IBOutlet weak var playerPositionLabel: UILabel!
 	
-	//--------------------------------------
-	// MARK: - View
-	//--------------------------------------
-    override func viewDidLoad() {
+		// MARK: - View
+	    override func viewDidLoad() {
         super.viewDidLoad()
 	
 		fillUserInformation()
 	}
 	
-	//--------------------------------------
-	// MARK: - Player information loading
-	//--------------------------------------
-	func fillUserInformation() {
+		// MARK: - Player information loading
+		func fillUserInformation() {
 		playerImageView.image = player?.image
 		playerNameLabel.text = player?.name
 		playerPositionLabel.text = player?.position

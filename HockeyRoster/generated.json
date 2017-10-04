@@ -1,122 +1,83 @@
-[
-  {
+{"players": [{
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Kristie Mendoza",
-    "latitude": -36.972142,
-    "longitude": 33.38619
-  },
+    "position": "Puck Leader"  },
   {
     "picture": "https://previews.123rf.com/images/prometeus/prometeus1205/prometeus120500586/13813945-Portrait-of-a-handsome-ice-hockey-player-with-hockey-stick-Studio-shot--Stock-Photo.jpg",
     "name": "Harriet Brady",
-    "latitude": -32.389505,
-    "longitude": -49.016353
-  },
+    "position": "Goalie"  },
   {
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Odessa Sweet",
-    "latitude": -87.967186,
-    "longitude": -105.740529
-  },
+    "position": "Fast Skater"  },
   {
     "picture": "https://previews.123rf.com/images/andreypopov/andreypopov1302/andreypopov130201031/18065239-Professional-hockey-player-after-game-Isolated-on-white-Stock-Photo.jpg",
     "name": "Brittney Soto",
-    "latitude": -88.446923,
-    "longitude": -96.750805
-  },
+    "position": "Slapshooter"  },
   {
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Juliet Mcgee",
-    "latitude": 81.746387,
-    "longitude": -74.433947
-  },
+    "position": "Brawler"  },
   {
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Cain Rogers",
-    "latitude": -72.453685,
-    "longitude": -20.989662
-  },
+    "position": "Zambini Driver"  },
   {
     "picture": "https://previews.123rf.com/images/prometeus/prometeus1205/prometeus120500586/13813945-Portrait-of-a-handsome-ice-hockey-player-with-hockey-stick-Studio-shot--Stock-Photo.jpg",
     "name": "Stevens Durham",
-    "latitude": -0.028378,
-    "longitude": -119.498019
-  },
+    "position": "The Crusher"  },
   {
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Madeleine Blevins",
-    "latitude": -66.534946,
-    "longitude": -92.291462
-  },
+    "position": "Biscuit Thief"  },
   {
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Roxie Parsons",
-    "latitude": -16.742242,
-    "longitude": 134.608806
-  },
+    "position": "Team Manager"  },
   {
     "picture": "https://previews.123rf.com/images/prometeus/prometeus1205/prometeus120500586/13813945-Portrait-of-a-handsome-ice-hockey-player-with-hockey-stick-Studio-shot--Stock-Photo.jpg",
     "name": "Garner Molina",
-    "latitude": 54.23049,
-    "longitude": -91.856766
-  },
+    "position": "Mascot"  },
   {
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Fuller Gould",
-    "latitude": 18.72433,
-    "longitude": -103.501287
-  },
+    "position": "Piledriver"  },
   {
     "picture": "https://previews.123rf.com/images/andreypopov/andreypopov1302/andreypopov130201031/18065239-Professional-hockey-player-after-game-Isolated-on-white-Stock-Photo.jpg",
     "name": "Butler Crane",
-    "latitude": 50.240017,
-    "longitude": 143.110199
-  },
+    "position": "Triple Axle"  },
   {
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Bowman Berry",
-    "latitude": 51.980404,
-    "longitude": 62.323004
-  },
+    "position": "High Sticker"  },
   {
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Massey Nunez",
-    "latitude": -70.389871,
-    "longitude": -146.449962
-  },
+    "position": "A Panda"  },
   {
     "picture": "https://previews.123rf.com/images/andreypopov/andreypopov1302/andreypopov130201031/18065239-Professional-hockey-player-after-game-Isolated-on-white-Stock-Photo.jpg",
     "name": "Downs Roth",
-    "latitude": -27.690785,
-    "longitude": 19.515659
-  },
+    "position": "Coca-Cola Polar Bear"  },
   {
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Salinas Ramirez",
-    "latitude": 16.769528,
-    "longitude": 142.258732
-  },
+    "position": "Right Wing"  },
   {
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Crawford Stokes",
-    "latitude": -60.257671,
-    "longitude": -67.92435
-  },
+    "position": "Left Wing"  },
   {
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Millicent Sykes",
-    "latitude": -34.216191,
-    "longitude": 119.735811
-  },
+    "position": "Moderate"  },
   {
     "picture": "https://previews.123rf.com/images/prometeus/prometeus1205/prometeus120500586/13813945-Portrait-of-a-handsome-ice-hockey-player-with-hockey-stick-Studio-shot--Stock-Photo.jpg",
     "name": "Calhoun Baker",
-    "latitude": 30.568782,
-    "longitude": 89.489583
-  },
+    "position": "(-70.389871, -146.449962)"  },
   {
     "picture": "https://previews.123rf.com/images/ostill/ostill1505/ostill150500243/40318904-one-caucasian-man-ice-hockey-player-in-studio-silhouette-isolated-on-white-background-Stock-Photo.jpg",
     "name": "Lewis Floyd",
-    "latitude": -44.024596,
-    "longitude": -43.005616
-  }
-]
+ "position": "Backup Goalie"  }
+ 
+ ]}
+

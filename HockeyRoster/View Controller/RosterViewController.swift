@@ -9,28 +9,22 @@
 import UIKit
 
 class RosterViewController: UIViewController {
-	//--------------------------------------
-	// MARK: - Properties
-	//--------------------------------------
-	var players: [Player]?
+		// MARK: - Properties
+	var roster: Roster?
 	var rosterLoader: RosterLoader?
 	var selectedPlayer: Player?
 	
-	//--------------------------------------
-	// MARK: - Outlets
-	//--------------------------------------
-	@IBOutlet weak var rosterTableView: RosterTableView!
+		// MARK: - Outlets
+		@IBOutlet weak var rosterTableView: RosterTableView!
 	@IBOutlet weak var rosterNotAvailableLabel: UILabel!
 	@IBOutlet weak var loadingStackView: UIStackView!
 	
-	//--------------------------------------
-	// MARK: - View
-	//--------------------------------------
-	override func viewDidLoad() {
+		// MARK: - View
+		override func viewDidLoad() {
 		super.viewDidLoad()
 		
 		rosterLoader = RosterLoader()
-		rosterLoader?.loadFrom(url: Links.localJSONFilepath) {  [weak self] (players, error) in
+		rosterLoader?.loadFrom(url: Links.localJSONFilepath) {  [weak self] (roster, error) in
 			
 			if let error = error {
 				let nsVersionError = error as NSError
@@ -40,7 +34,7 @@ class RosterViewController: UIViewController {
 				return
 			}
 			
-			self?.players = players
+			self?.roster = roster
 			self?.configureViewsForFinishedLoad()
 		}
 	}
@@ -60,7 +54,7 @@ class RosterViewController: UIViewController {
 		DispatchQueue.main.async { [weak self] in
 			self?.loadingStackView.alpha = 0
 
-			if (self?.players?.count ?? 0) > 0 {
+			if (self?.roster?.players?.count ?? 0) > 0 {
 				self?.rosterTableView.reloadData()
 				self?.rosterNotAvailableLabel.alpha = 0
 			} else {
@@ -71,23 +65,20 @@ class RosterViewController: UIViewController {
 		}
 	}
 	
-	//--------------------------------------
-	// MARK: - Segue
-	//--------------------------------------
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		// MARK: - Segue
+		override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if let dvc = segue.destination as? PlayerDetailViewController {
 			dvc.player = selectedPlayer
 		}
 	}
 }
 
-//--------------------------------------
 // MARK: - Table View
-//--------------------------------------
 extension RosterViewController: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		if let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.roster) as? RosterTableViewCell {
-			let player = players?[indexPath.row]
+			let player = roster?.players?[indexPath.row]
+			
 			cell.playerNameLabel.text = player?.name
 			cell.playerPositionLabel.text = player?.position
 			if let playerImage = player?.image {
@@ -103,7 +94,7 @@ extension RosterViewController: UITableViewDelegate, UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		if let players = players {
+		if let players = roster?.players {
 			return players.count
 		} else {
 			return 0
@@ -111,7 +102,7 @@ extension RosterViewController: UITableViewDelegate, UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-		guard let player = players?[indexPath.row], player.image == nil, !player.isLoadingImage else { return }
+		guard let player = roster?.players?[indexPath.row], player.image == nil, !player.isLoadingImage else { return }
 		
 		PlayerImageLoader.loadImageFor(player) { success in
 			if success {
@@ -123,7 +114,7 @@ extension RosterViewController: UITableViewDelegate, UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		guard let player = players?[indexPath.row] else { return }
+		guard let player = roster?.players?[indexPath.row] else { return }
 		
 		selectedPlayer = player
 		performSegue(withIdentifier: SegueIdentifiers.playerDetailSegue, sender: self)

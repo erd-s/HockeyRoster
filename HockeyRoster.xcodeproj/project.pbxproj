@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C00E0111F8549F000B6B831 /* Roster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C00E0101F8549F000B6B831 /* Roster.swift */; };
 		0C7F40D91F82F27000DBBD5A /* generated.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C7F40D81F82F27000DBBD5A /* generated.json */; };
 		0C7F40DB1F83162F00DBBD5A /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7F40DA1F83162F00DBBD5A /* UIColor + Extension.swift */; };
 		0CB40DB61F829E1C006E8E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB40DB51F829E1C006E8E2F /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C00E0101F8549F000B6B831 /* Roster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roster.swift; sourceTree = "<group>"; };
 		0C7F40D81F82F27000DBBD5A /* generated.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = generated.json; sourceTree = "<group>"; };
 		0C7F40DA1F83162F00DBBD5A /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		0CB40DB21F829E1C006E8E2F /* HockeyRoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HockeyRoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 		0CB40DCA1F829E56006E8E2F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0C00E0101F8549F000B6B831 /* Roster.swift */,
 				0CB40DE31F82A742006E8E2F /* RosterTableView.swift */,
 				0CB40DD51F829F24006E8E2F /* Player.swift */,
 			);
@@ -221,6 +224,7 @@
 			files = (
 				0CB40DD61F829F24006E8E2F /* Player.swift in Sources */,
 				0CB40DDF1F82A18D006E8E2F /* PlayerImageLoader.swift in Sources */,
+				0C00E0111F8549F000B6B831 /* Roster.swift in Sources */,
 				0CB40DD91F829F50006E8E2F /* RosterLoader.swift in Sources */,
 				0CB40DB61F829E1C006E8E2F /* AppDelegate.swift in Sources */,
 				0C7F40DB1F83162F00DBBD5A /* UIColor + Extension.swift in Sources */,
