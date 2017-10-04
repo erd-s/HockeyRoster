@@ -8,9 +8,6 @@
 
 import Foundation
 
-
-class Roster: Decodable {
+class Roster: Codable {
 	var players: [Player]?
-	
-	
 }

@@ -16,17 +16,6 @@ class Player: Codable {
 	var position: String?
 	var isLoadingImage = false
 	
-	///initialize w/o using coder/decoder
-	init(fromDict dict: [String: Any]?) {
-		guard let dict = dict else { return }
-		name = dict[Keys.name] as? String
-		position = dict[Keys.position] as? String
-		
-		if let imageURLString = dict[Keys.imageURL] as? String {
-			imageURL = URL(string: imageURLString)
-		}
-	}
-	
 	required init(from decoder: Decoder) throws {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
 		
@@ -43,17 +32,10 @@ class Player: Codable {
 	}
 }
 
-// MARK: - JSON Keys
 extension Player {
 	private enum CodingKeys: String, CodingKey {
 		case imageURL = "picture"
 		case name
 		case position
-	}
-	
-	private struct Keys {
-		static let name = "name"
-		static let imageURL = "picture"
-		static let position = "position"
 	}
 }

@@ -16,7 +16,6 @@ class RosterTableViewCell: UITableViewCell {
 	override func awakeFromNib() {
 		super.awakeFromNib()
 		
-		//lighten selected background view
 		selectedBackgroundView = UIImageView(image: UIColor.gray05.image)
 	}
 }

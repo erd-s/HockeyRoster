@@ -40,17 +40,4 @@ class RosterLoader: NSObject {
 			return nil
 		}
 	}
-	
-	///Parses an array of dictionaries into an array of constructed players.
-	private func parsedRoster(_ playerDicts: [[String: Any]]?) -> [Player]? {
-		guard let playerDicts = playerDicts else { return nil }
-		
-		var players = [Player]()
-		for playerDict in playerDicts {
-			let player = Player(fromDict: playerDict)
-			players.append(player)
-		}
-		
-		return players
-	}
 }

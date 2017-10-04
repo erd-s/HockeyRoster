@@ -10,7 +10,6 @@ import UIKit
 
 class RosterTableView: UITableView {
 	override func awakeFromNib() {
-		//hides extra separator lines
 		tableFooterView = UIView()
 	}
 }
